@@ -10,5 +10,4 @@ class StaticPagesController < ApplicationController
 			@mission_statement = "save the world"
 		end
 	end
-
 end
