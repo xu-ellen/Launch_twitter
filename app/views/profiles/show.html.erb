@@ -1,11 +1,13 @@
-This is the profile show page <br><br>
+Profile Show Page <br><br>
 
 First Name: <%= @profile.first_name %> <br>
 Last Name: <%= @profile.last_name %> <br>
 Age: <%= @profile.age %> <br><br>
 
-<ul class="list-group">
-	<% @profile.user.tweets.each do |tweet| %>
-		<li class="list-group-item"><%= tweet.content %></li>
-	<% end %>
-</ul>
+<% if @profile.user.tweets.any? %>
+	<ul class="list-group">
+		<% @profile.user.tweets.each do |tweet| %>
+			<li class="list-group-item"><%= tweet.content %></li>
+		<% end %>
+	</ul>
+<% end %>
