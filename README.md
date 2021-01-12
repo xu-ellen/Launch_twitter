@@ -1,4 +1,3 @@
 # README
 
-View the website here: http://twitter-basic.herokuapp.com/
-Built with Ruby on Rails
+Basic Twitter built with Ruby on Rails
